@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Webpage</title>
     <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,14 +22,34 @@
   </head>
 
   <body>
-    <header class="header-container"></header>
+    <div class="header-container"></div>
 
     <div class="main-profile-container">
-      <h1 class="main-heading">Hi, I'm Pauline</h1>
+      <div class="profile-pic-container">
+        <img class="profile-image" src="../assets/images/home/me-square.png" />
+      </div>
+      <div class="home-text-container">
+        <div class="home-text-heading">
+          Hi, I'm Pauline
+        </div>
+        <div class="bio-text">
+          A 21-year-old professional procrastinator with a passion for techy stuff.
+        </div>
+      </div>
+    </div>
+    <img
+      class="home-background"
+      src="../assets/images/home/home-background1.png"
+    />
+
+    <!--
+    <div class="mobile-main-profile-container" visibility="hidden">
+      <h1 class="mobile-main-heading" visibility="hidden">Hi, I'm Pauline</h1>
       <img
-        class="profile-pic"
+        class="mobile-profile-pic"
         src="../assets/images/home/me-extended-background1.png"
       />
     </div>
+    -->
   </body>
 </html>
