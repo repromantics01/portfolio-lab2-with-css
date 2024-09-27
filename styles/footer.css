@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/CenturyGothic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  div {
+    font-family: "Century Gothic";
+  }
+
+.footer-container {
+  background-color: #6f6830;
+  color: rgb(222, 222, 222);
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: rgb(222, 222, 222);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
