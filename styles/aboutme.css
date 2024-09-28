@@ -66,6 +66,15 @@ p.years {
 	line-height: 160%;
 }
 
+.photo-pauline {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+  }
+
 @mediaX screen and (min-width: 768px) and (max-width: 1199px) {
 	.about {
 		max-width: 70vw;
@@ -118,3 +127,4 @@ p.years {
 		font-weight: 500;
 	}
 }
+
