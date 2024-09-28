@@ -1,0 +1,15 @@
+.notice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.notice {
+    font-family: 'Century Gothic';
+    font-size: 90px;
+    text-align: center;
+    color: white;
+    z-index: 15;
+} 
