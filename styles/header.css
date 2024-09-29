@@ -65,7 +65,7 @@
 }
 
 .header-texts:visited {
-  color: rgb(222, 222, 222); /
+  color: rgb(222, 222, 222); 
   text-decoration: none; 
 }
 
@@ -115,7 +115,7 @@
 
 @media (max-width: 768px) {
   .header-container {
-    grid-template-columns: 1fr; /
+    grid-template-columns: 1fr; 
     height: auto;
     padding: 10px 0;
   }
