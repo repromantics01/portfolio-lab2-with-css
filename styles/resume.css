@@ -1,242 +1,254 @@
 @font-face {
-    font-family: "Century Gothic";
-    src: url("../fonts/CenturyGothic.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Century Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d0cba4;
+  color: #333;
+  background: url('../assets/images/home/home-background1.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.about-page {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: rgb(209, 209, 209);
+  padding: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(10px); 
+}
+
+h1, h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.about {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 780px;
+  padding: 4vh 0;
+}
+
+.about .text {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+h2 {
+  color: rgb(209, 209, 209);
+  font-family: 'Century Gothic';
+  font-weight: 500;
+  font-size: 2.75rem;
+  line-height: 1.2;
+  margin: 5px 0 40px 0;
+}
+
+h4 {
+  color: rgb(209, 209, 209);
+  font-family: 'Century Gothic';
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin: 80px 0 20px 0;
+}
+
+.multi-row-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.multi-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+p.title {
+  color: #111111;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+p.entity {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+p.years {
+  color: #666666;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.contact-options a {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-options a:hover {
+  color: #111111;
+}
+
+.languages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px; /* Increased width */
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Adds transition for hover effects */
+}
+
+.tech-item:hover {
+  transform: scale(1.1); /* Scales up the item on hover */
+}
+
+.tech-logo {
+  width: 80px; 
+  height: 100px; 
+  object-fit: contain;
+}
+
+.tech-item p {
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 1.1rem; 
+  color: rgb(209, 209, 209);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.vsu-photo {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+  max-width: 1200px;
+}
+
+.projects-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(209, 209, 209);
+  padding: 40px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.3); /* Adds a divider between projects */
+}
+
+.project-item:last-child {
+  border-bottom: none; /* Removes the divider for the last project */
+}
+
+.project-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6f6830;
+  border-radius: 3px;
+  text-decoration: none; 
+  color: rgb(209, 209, 209);
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #111111;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about {
+    max-width: 70vw;
   }
-  
-  body {
-    font-family: 'Century Gothic', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #d0cba4;
-    color: #333;
-    background: url('../assets/images/home/home-background1.png') no-repeat center center fixed;
-    background-size: cover;
+  .photo-pauline {
+    width: 80vw;
   }
-  
+}
+
+@media screen and (max-width: 767px) {
   .about-page {
-    background-color: rgba(0, 0, 0, 0.15);
-    color: rgb(209, 209, 209);
-    padding: 40px;
-    margin-top: 100px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    backdrop-filter: blur(10px); 
+    padding: 12vh 0;
+  }
+  .about {
+    margin: 0 20px;
+    max-width: 100%;
   }
 
-  h1, h2 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  .about {
-    margin: 0 auto;
+  .photo-pauline {
+    width: 100%;
+    display: block;
+    padding: 0 20px;
     box-sizing: border-box;
-    max-width: 780px;
-    padding: 4vh 0;
+    height: 360px;
+    object-fit: cover;
   }
-  
-  .about .text {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
   h2 {
-    color: rgb(209, 209, 209);
-    font-family: 'Century Gothic';
-    font-weight: 500;
-    font-size: 2.75rem;
-    line-height: 1.2;
-    margin: 5px 0 40px 0;
- /* Centers the heading */
-  }
-  
-  h4 {
-    color: rgb(209, 209, 209);
-    font-family: 'Century Gothic';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2rem;
-    line-height: 1.4;
-    margin: 80px 0 20px 0;
+    margin: 40px 0 20px 0;
   }
-  
+  h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 40px 0 20px 0;
+  }
   .multi-row-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .multi-row {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
   p.title {
-    color: #111111;
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 500;
   }
-  
-  p.entity {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
   p.years {
-    color: #666666;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.6;
+    font-weight: 400;
   }
-  
   .contact-options a {
     font-size: 1.125rem;
     font-weight: 500;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s;
   }
-  
-  .contact-options a:hover {
-    color: #111111;
-  }
-  
-  .languages-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    padding: 20px;
-  }
-  
-  .tech-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 120px; /* Increased width */
-    margin: 10px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Adds transition for hover effects */
-  }
-  
-  .tech-item:hover {
-    transform: scale(1.1); /* Scales up the item on hover */
-
-  }
-  
-  .tech-logo {
-    width: 80px; 
-    height: 100px; 
-    object-fit: contain;
-  }
-  
-  .tech-item p {
-    font-family: 'Century Gothic', sans-serif;
-    font-size: 1.1rem; 
-    color: rgb(209, 209, 209);
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .vsu-photo {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 980px;
-    max-width: 1200px;
-  }
-
-  .projects-container {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: rgb(209, 209, 209);
-    padding: 40px;
-    margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
-  }
-  
-  .project-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .project-image {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .project-description {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .project-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #6f6830;
-  }
-  
-  
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .about {
-      max-width: 70vw;
-    }
-    .photo-pauline {
-      width: 80vw;
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-    .about-page {
-      padding: 12vh 0;
-    }
-    .about {
-      margin: 0 20px;
-      max-width: 100%;
-    }
-  
-    .photo-pauline {
-      width: 100%;
-      display: block;
-      padding: 0 20px;
-      box-sizing: border-box;
-      height: 360px;
-      object-fit: cover;
-    }
-    h2 {
-      font-weight: 600;
-      font-size: 2rem;
-      margin: 40px 0 20px 0;
-    }
-    h4 {
-      font-weight: 600;
-      font-size: 1.5rem;
-      margin: 40px 0 20px 0;
-    }
-    .multi-row-grid {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    p.title {
-      font-weight: 500;
-    }
-    p.years {
-      font-weight: 400;
-    }
-    .contact-options a {
-      font-size: 1.125rem;
-      font-weight: 500;
-    }
-  }
+}
