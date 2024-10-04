@@ -159,7 +159,6 @@ li {
   border-radius: 10px;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .footer-content {
     flex-direction: column;

@@ -15,7 +15,6 @@ body {
   background-size: cover;
 }
 
-
 h1, h2 {
   margin: 0;
   font-size: 1.5rem;
@@ -39,11 +38,8 @@ h1, h2 {
   padding: 50px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  max-width: 900px;
   margin: 50px auto;
-  
 }
-
 
 .about .text {
   margin-bottom: 15px;
@@ -68,26 +64,6 @@ h4 {
   line-height: 1.4;
   margin: 80px 0 20px 0;
 }
-
-p.title {
-  color: #111111;
-  font-weight: 400;
-  font-size: 1.2rem;
-}
-
-p.entity {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-p.years {
-  color: #666666;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-
 
 .contact-options a:hover {
   color: #111111;
@@ -130,7 +106,7 @@ p.years {
 }
 
 .tech-item:hover {
-  transform: scale(1.1); /* Hover effect */
+  transform: scale(1.1);
 }
 
 .tech-logo {
@@ -145,29 +121,39 @@ p.years {
   text-align: center;
 }
 
-
 .vsu-photo {
   margin: 0 auto;
   width: 100%;
-  max-width: 980px;
   max-width: 1200px;
   border-radius: 20px;
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .about {
     max-width: 70vw;
   }
+  
   .photo-pauline {
     width: 80vw;
+  }
+
+  .educ-background-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .languages-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tools {
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .about-page {
-    padding: 12vh 0;
-  }
   .about {
     margin: 0 20px;
     max-width: 100%;
@@ -181,24 +167,38 @@ p.years {
     height: 360px;
     object-fit: cover;
   }
+
   h2 {
     font-weight: 600;
     font-size: 2rem;
     margin: 40px 0 20px 0;
   }
+  
   h4 {
     font-weight: 600;
     font-size: 1.5rem;
     margin: 40px 0 20px 0;
   }
+
   p.title {
     font-weight: 500;
   }
+  
   p.years {
     font-weight: 400;
   }
+  
   .contact-options a {
     font-size: 1.125rem;
     font-weight: 500;
+  }
+  
+  .educ-background-tools {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .languages-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -21,7 +21,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .home-background {
@@ -146,8 +146,8 @@ body {
   }
 
   .contact {
-    padding: 0.8rem 1.5rem; /* Adjusted padding */
-    font-size: 0.95rem; /* Slightly smaller font */
+    padding: 0.8rem 1.5rem; 
+    font-size: 0.95rem; 
   }
 }
 
@@ -165,28 +165,27 @@ body {
 
   .header-texts {
     padding: 10px 15px;
-    font-size: 0.85rem; /* Scaled down font size */
+    font-size: 0.85rem; 
   }
 
   .header-name {
-    font-size: 22px; /* Slightly reduced */
+    font-size: 22px; 
   }
 
-  /* Reduce space between divs */
+
   .left-portion, .middle-portion, .right-portion {
     margin-bottom: 10px;
   }
 
-  /* Shrink icons */
   .contact-icon {
-    width: 20px; /* Reduced size */
+    width: 20px;
     height: 20px;
   }
 
   .contact {
-    padding: 0.6rem 1.2rem; /* Further reduced padding */
-    font-size: 0.85rem; /* Smaller font for medium devices */
-    width: 100%; /* Full width on smaller screens */
+    padding: 0.6rem 1.2rem; 
+    font-size: 0.85rem; 
+    width: 100%; 
     text-align: center;
   }
 }
@@ -205,28 +204,27 @@ body {
 
   .header-texts {
     padding: 5px 10px;
-    font-size: 0.75rem; /* Further reduced for small screens */
+    font-size: 0.75rem; 
   }
 
   .header-name {
-    font-size: 18px; /* Smaller font size for header name */
+    font-size: 18px; 
   }
 
-  /* Minimized space between divs */
   .left-portion, .middle-portion, .right-portion {
     margin-bottom: 5px;
   }
 
-  /* Further shrink icons */
+
   .contact-icon {
-    width: 15px; /* Further reduced size */
+    width: 15px; 
     height: 15px;
   }
 
   .contact {
-    padding: 0.5rem 1rem; /* Minimal padding for small screens */
-    font-size: 0.75rem; /* Smaller font for small screens */
-    width: 100%; /* Full width on mobile devices */
+    padding: 0.5rem 1rem; 
+    font-size: 0.75rem;
+    width: 100%;
     text-align: center;
   }
 }
