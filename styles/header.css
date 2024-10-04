@@ -144,6 +144,7 @@ body {
   border-radius: 5px;
   transition: all 0.5s ease;
   text-decoration: none;
+  font-family: 'Century Gothic';
 }
 
 .contact:hover {
@@ -219,6 +220,11 @@ body {
   .header-name {
     font-size: 30px;
   }
+
+  .contact {
+    padding: 0.8rem 2.2rem; /* Reduced padding */
+    font-size: 0.95rem; /* Slightly smaller font */
+  }
 }
 @media (max-width: 768px) {
   .header-container {
@@ -255,6 +261,13 @@ body {
   .footer-links a {
     padding: 8px; /* Reduce padding inside icons */
     margin-right: 10px;
+  }
+
+  .contact {
+    padding: 0.6rem 1.8rem; /* Further reduced padding */
+    font-size: 0.85rem; /* Smaller font for medium devices */
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
   }
 }
 
@@ -293,5 +306,12 @@ body {
   .footer-links a {
     padding: 5px; /* Further reduce padding inside icons */
     margin-right: 5px;
+  }
+
+  .contact {
+    padding: 0.5rem 1.2rem; /* Minimal padding for small screens */
+    font-size: 0.75rem; /* Smaller font for small screens */
+    width: 100%; /* Full width on mobile devices */
+    text-align: center;
   }
 }
