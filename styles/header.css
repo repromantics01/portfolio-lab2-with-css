@@ -88,13 +88,6 @@ body {
   font-size: 35px;
 }
 
-.contact-icon {
-  width: 28px;
-  height: 28px;
-  padding: 1.4px;
-  margin: 0 10
-}
-
 .header-container {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr; 
@@ -106,7 +99,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .home-background {
@@ -140,6 +133,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: transparent;
+  color: rgb(239, 235, 235);
+  background-color: #999A8D;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.contact:hover {
+  background-color: #7c7d70;
+
 }
 
 .header-texts {
@@ -211,7 +220,6 @@ body {
     font-size: 30px;
   }
 }
-
 @media (max-width: 768px) {
   .header-container {
     grid-template-columns: 1fr; 
@@ -226,11 +234,27 @@ body {
 
   .header-texts {
     padding: 10px 20px;
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Scaled down font size */
   }
 
   .header-name {
-    font-size: 25px;
+    font-size: 22px; /* Slightly reduced */
+  }
+
+  /* Reduce space between divs */
+  .left-portion, .middle-portion, .right-portion {
+    margin-bottom: 10px;
+  }
+
+  /* Shrink icons */
+  .footer-contact-icon, .footer-contact-icon-2 {
+    width: 20px; /* Reduced size */
+    height: 20px;
+  }
+
+  .footer-links a {
+    padding: 8px; /* Reduce padding inside icons */
+    margin-right: 10px;
   }
 }
 
@@ -248,10 +272,26 @@ body {
 
   .header-texts {
     padding: 5px 10px;
-    font-size: 0.8rem;
+    font-size: 0.75rem; /* Further reduced for small screens */
   }
 
   .header-name {
-    font-size: 20px;
+    font-size: 18px; /* Smaller font size for header name */
+  }
+
+  /* Minimized space between divs */
+  .left-portion, .middle-portion, .right-portion {
+    margin-bottom: 5px;
+  }
+
+  /* Further shrink icons */
+  .footer-contact-icon, .footer-contact-icon-2 {
+    width: 15px; /* Further reduced size */
+    height: 15px;
+  }
+
+  .footer-links a {
+    padding: 5px; /* Further reduce padding inside icons */
+    margin-right: 5px;
   }
 }
