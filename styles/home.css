@@ -92,6 +92,7 @@ body {
   .main-profile-container {
     grid-template-columns: 1fr;
     height: auto;
+    margin-top: 90px;
   }
 
   .profile-pic-container {
@@ -123,6 +124,7 @@ body {
   .profile-pic-container {
     height: 250px;
     width: 250px;
+    margin-top: 150px;
   }
 
   .home-text-container {
