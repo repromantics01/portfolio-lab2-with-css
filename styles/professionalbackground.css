@@ -15,25 +15,34 @@ body {
   background-size: cover;
 }
 
-.about-page {
-  background-color: rgba(0, 0, 0, 0.15);
-  color: rgb(209, 209, 209);
-  padding: 40px;
-  margin-top: 50px;
-  margin-bottom: 70px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  /* backdrop-filter: blur(10px);  */
-}
 
 h1, h2 {
   margin: 0;
   font-size: 1.5rem;
 }
 
+.tech-item p {
+  color: white;
+}
+
+.educ-background-tools {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  gap: 40px;
+  padding: 70px;
+  padding-top: 0;
+}
+
+.tools {
+  background-color: rgba(0, 0, 0, 0.15); 
+  backdrop-filter: blur(50px);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: 50px auto;
+  
+}
 
 
 .about .text {
@@ -60,18 +69,6 @@ h4 {
   margin: 80px 0 20px 0;
 }
 
-.multi-row-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.multi-row {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
 p.title {
   color: #111111;
   font-weight: 400;
@@ -90,58 +87,71 @@ p.years {
   line-height: 1.6;
 }
 
-.contact-options a {
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+
 
 .contact-options a:hover {
   color: #111111;
 }
 
+.about-page {
+  background-color: rgba(0, 0, 0, 0.15); 
+  backdrop-filter: blur(50px);
+  color: rgb(209, 209, 209);
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+}
+
+.section-heading {
+  color: rgb(209, 209, 209);
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
 .languages-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
   padding: 20px;
+  align-items: center;
 }
 
 .tech-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 120px; /* Increased width */
-  margin: 10px;
-  transition: transform 0.3s, box-shadow 0.3s; /* Adds transition for hover effects */
+  width: 100px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .tech-item:hover {
-  transform: scale(1.1); /* Scales up the item on hover */
+  transform: scale(1.1); /* Hover effect */
 }
 
 .tech-logo {
-  width: 80px; 
-  height: 100px; 
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .tech-item p {
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 1.1rem; 
-  color: rgb(209, 209, 209);
-  text-align: center;
   margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: center;
 }
+
 
 .vsu-photo {
   margin: 0 auto;
   width: 100%;
   max-width: 980px;
   max-width: 1200px;
+  border-radius: 20px;
 }
 
 
@@ -180,9 +190,6 @@ p.years {
     font-weight: 600;
     font-size: 1.5rem;
     margin: 40px 0 20px 0;
-  }
-  .multi-row-grid {
-    grid-template-columns: repeat(1, 1fr);
   }
   p.title {
     font-weight: 500;
